@@ -1,0 +1,220 @@
+/* =======================General ============== */
+html {
+  font-family: "Poppins", sans-serif !important;
+}
+a {
+  color: #000000 !important;
+  text-decoration: none;
+}
+a:hover {
+  color: #b88e2f !important;
+}
+
+.nav-height {
+  min-height: 100px;
+}
+.navbar-brand .logo img {
+  width: 70px;
+  height: 60px;
+}
+.navbar-brand h1 {
+  font-size: 2.125rem;
+}
+/* ?-----------------------------hero section------------------------- */
+.hero-section {
+  min-height: calc(100vh - 100px);
+  background-image: url("/assets/hero-bg.jfif");
+  background-size: cover;
+  background-position: center center;
+}
+.hero-content {
+  background-color: #fff3e3;
+}
+.hero-content .arr-header {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 100%;
+  color: #333333;
+}
+.hero-content h1 {
+  color: #b88e2f;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 65px;
+}
+.hero-content .content-info {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.hero-content button {
+  padding: 25px 72px;
+  background-color: #b88e2f;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+}
+/**=========================products-section===============*/
+.product-item {
+  background-color: #f4f5f7;
+}
+.product-img {
+  height: 300px;
+}
+.product-content p {
+  color: #898989;
+}
+.product-price span:nth-child(2) {
+  color: #b0b0b0;
+}
+.product-item .badge {
+  width: 48px;
+  height: 48px;
+  right: 15px;
+  top: 15px;
+}
+.product-item .overlay {
+  background-color: rgba(58, 58, 58, 0.72);
+  opacity: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.product-item .overlay button {
+  color: #b88e2f;
+}
+.product-item:hover .overlay {
+  opacity: 1;
+  display: flex;
+}
+.products-section > button {
+  border: 1px solid #b88e2f;
+  color: #b88e2f;
+  font-weight: 600;
+}
+/*!===================insperation-section=================*/
+.insperation-section {
+  background-color: #fcf8f3;
+}
+.insperation-section h2 {
+  color: #3a3a3a;
+}
+.insperation-section p {
+  color: #616161;
+}
+.insperation-section button {
+  background-color: #b88e2f;
+}
+.inner {
+  bottom: 20px;
+  left: 20px;
+}
+.inner .first {
+  background-color: rgba(255, 255, 255, 0.72);
+}
+.inner .first p:nth-child(1) {
+  color: #616161;
+  font-size: 0.75rem;
+}
+.inner span {
+  background-color: #616161;
+  width: 27px;
+  height: 1px;
+  margin: 2px 4px 2px 4px;
+}
+.inner p:nth-child(2) {
+  color: #3a3a3a;
+  font-size: 1rem;
+}
+.inner .second {
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+}
+.slider-button {
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+  color: #b88e2f !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #b88e2f;
+  border-radius: 50%;
+  padding: 10px;
+  background-size: 50% 50%;
+  background-position: center center;
+}
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px;
+}
+.carousel-indicators button {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #d8d8d8 !important;
+  border-color: #d8d8d8 !important;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.carousel-indicators .active {
+  padding: 7px;
+  background-color: #b88e2f !important;
+  border: 1px solid #b88e2f !important;
+}
+.insperation-slider .slider-imgs {
+  transition: all 0.2s ease-in-out;
+}
+/*?====================================footer-=============================*/
+footer p {
+  color: #9f9f9f;
+}
+.head-link a {
+  color: #9f9f9f !important;
+}
+/*====================================media-queries=========================*/
+@media screen and (min-width: 720px) {
+  .hero-section > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 77px;
+  }
+  .hero-section {
+    background-position: center 75%;
+  }
+
+  .insperation-section .inner {
+    bottom: 40px;
+    left: 40px;
+  }
+  .insperation-section .inner p:nth-child(2) {
+    font-size: 1.75rem;
+  }
+  .insperation-section .inner .first p:nth-child(1) {
+    font-size: 1rem;
+  }
+  .insperation-section .inner .second,
+  .slider-button {
+    width: 48px;
+    height: 48px;
+    font-size: 1.275rem;
+  }
+}
